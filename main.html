@@ -1,16 +1,77 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Shopping Cart</title>
+  
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .block-heading {
+      color: #3b99e0;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .summary {
+      border-top: 2px solid #5ea4f3;
+      background-color: #f7fbff;
+      padding: 20px;
+    }
+    .summary .btn {
+      background-color: #3b99e0;
+      color: white;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <div class="container">
+    
+    <h2 class="block-heading">Shopping Cart</h2>
+
+    <div class="row">
+      
+      <div class="col-lg-8">
+        <div class="product">
+          <div class="row mb-4">
+            <div class="col-md-4">
+              <img src="https://via.placeholder.com/150" alt="Product 1" class="img-fluid">
+            </div>
+            <div class="col-md-8">
+              <h5>Product Name</h5>
+              <p>Description of the product goes here. This is a placeholder description.</p>
+              <p><strong>Price:</strong> $20.00</p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-md-4">
+              <img src="https://via.placeholder.com/150" alt="Product 2" class="img-fluid">
+            </div>
+            <div class="col-md-8">
+              <h5>Product Name</h5>
+              <p>Description of the product goes here. This is a placeholder description.</p>
+              <p><strong>Price:</strong> $30.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="summary">
+          <h5>Order Summary</h5>
+          <p><strong>Subtotal:</strong> $50.00</p>
+          <p><strong>Tax:</strong> $5.00</p>
+          <p><strong>Total:</strong> $55.00</p>
+          <button class="btn btn-block">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
-
 </html>
+
